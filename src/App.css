@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #2563eb, #14b8a6);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.page {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 430px;
+  padding: 35px 30px;
+  text-align: center;
+  border-radius: 24px;
+  background: rgba(15, 23, 42, 0.88);
   color: white;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.App-link {
-  color: #61dafb;
+.icon {
+  font-size: 55px;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1,
+h2 {
+  margin: 0;
+  font-size: 34px;
+  color: #ffffff;
+}
+
+.subtitle {
+  margin: 12px 0 25px;
+  color: #cbd5e1;
+  font-size: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  font-size: 16px;
+  background: #e0f2fe;
+  color: #0f172a;
+}
+
+input:focus {
+  box-shadow: 0 0 0 3px rgba(45, 212, 191, 0.6);
+}
+
+.btn {
+  width: 100%;
+  display: inline-block;
+  margin-top: 18px;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #14b8a6, #22c55e);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(34, 197, 94, 0.35);
+}
+
+.back-btn {
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+  border: none;
+  border-radius: 14px;
+  background: #334155;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background: #475569;
+}
+
+.error {
+  color: #fca5a5;
+  font-size: 14px;
+  margin: 8px 0;
+  font-weight: 600;
+}
+
+.result-box {
+  margin: 25px 0;
+  padding: 25px;
+  border-radius: 20px;
+  background: #020617;
+  border: 1px solid rgba(94, 234, 212, 0.3);
+}
+
+.bmi-value {
+  margin: 0;
+  font-size: 52px;
+  font-weight: 800;
+  color: #5eead4;
+}
+
+.status {
+  margin: 8px 0 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.author {
+  margin-top: 25px;
+  color: #e2e8f0;
+  font-size: 13px;
+  line-height: 1.6;
 }

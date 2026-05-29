@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Ex06 BMI Calculator
+## Date: 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## AIM
+To develop a responsive and interactive Body Mass Index (BMI) Calculator using React that allows users to input their height and weight, and calculates their BMI to categorize their health status (e.g., Underweight, Normal, Overweight, Obese).
 
-## Available Scripts
+## DESIGN STEPS
 
-In the project directory, you can run:
+### STEP 1: Initialize React Project
 
-### `npm start`
+<li>Create a new React app using create-react-app.</li>
+<li>Install React Router using:</li>
+npm install react-router-dom
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### STEP 2: Set Up Routing
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Create routing structure with react-router-dom:
 
-### `npm test`
+<li>Home route (/) – Intro or Navigation</li>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<li>BMI Calculator route (/bmi)</li>
 
-### `npm run build`
+<li>Result route (/result)</li>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### STEP 3: Design the BMI Form Page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<li>Create a form to accept Height (in cm or m) and Weight (in kg).</li>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<li>On form submit, navigate to the result page with entered values via URL query params or context/state.</li>
 
-### `npm run eject`
+## STEP 4: Handle Input Validation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<li>Check if height and weight are valid numbers.</li>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<li>Optionally, show error messages for invalid inputs.</li>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### STEP 5: Perform BMI Calculation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<li>In the result component:
 
-## Learn More
+<li>Extract height and weight from the route (URL or passed state).</li>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<li>Apply the BMI formula:</li>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![image](https://github.com/user-attachments/assets/ec785506-c96b-489e-8783-fb1a5d36101a)
+​
+ 
+<li>Convert height from cm to m if needed.</li></li>
 
-### Code Splitting
+### STEP 6: Display Result
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<li>Show calculated BMI.</li>
 
-### Analyzing the Bundle Size
+<li>Show category based on BMI range:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<li>Underweight, Normal, Overweight, Obese, etc.</li></li>
 
-### Making a Progressive Web App
+### STEP 7: Navigation Options
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<li>Provide a button to go back to the BMI form to calculate again.</li>
 
-### Advanced Configuration
+### STEP 8: Enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<li>Add styling using CSS or Tailwind.</li>
 
-### Deployment
+## PROGRAM
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## OUTPUT
+
+
+
+
+## RESULT
+The BMI Calculator successfully takes user input for height and weight, performs the BMI calculation in real-time using React state and event handling, and displays the BMI value along with the corresponding health category.

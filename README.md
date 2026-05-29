@@ -237,7 +237,7 @@ export default function App() {
 }
 ```
 
-### App.cs
+### App.css
 
 ```
 * {
